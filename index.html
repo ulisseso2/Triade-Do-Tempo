@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tríade do Tempo</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Tríade do Tempo</h1>
+            <nav>
+                <ul>
+                    <li><a href="">Dados</a></li>
+                    <li><a href="">Teste</a></li>
+                    <li><a href="">Cálculo</a></li>
+                    <li><a href="">Resposta</a></li>
+                </ul>
+            </nav>
+
+    </header>
+    <main>
+        <section id="dados">
+            <h2>Dados Pessoais</h2>
+            <form id="formulario"action="" method="POST">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Seu e-mail:</label>
+                <input type="text" name="email" id="email">
+                <input type="submit" value="Salvar" id="cadastro">
+            </form>
+        </Section>
+        <Section>
+            <h2>Inicie seu teste</h2>
+            <p>Agora vamos avaliar algumas respostas aos itens abaixo.</p>
+            <h3>Marque a pontuação mais adequada de como você age no dia a dia</h3>
+            <table>
+                <tr id="Cabeçalho">
+                    <th>N°</th>
+                    <th>Pergunta</th>
+                    <th>Resposta</th>
+                </tr>
+                <tr class="itens">
+                    <td>1</td>
+                    <td>Estive atrasado com minhas tarefas ou reuniões nas últimas semanas?</td>
+                    <td>
+                        <select name="opções" id="opcoes" >
+                            <option value="1">Nunca</option>
+                            <option value="2">Raramente</option>
+                            <option value="3">Às vezes</option>
+                            <option value="4">Quase Sempre</option>
+                            <option value="5">Sempre</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="itens">
+                    <td>2</td>
+                    <td>É comum reduzir meu horário de almoço ou até mesmo comer enquanto trabalho para concluir um projeto ou tarefa?</td>
+                    <td>
+                        <select name="opções" id="opcoes" >
+                            <option value="1">Nunca</option>
+                            <option value="2">Raramente</option>
+                            <option value="3">Às vezes</option>
+                            <option value="4">Quase Sempre</option>
+                            <option value="5">Sempre</option>
+                        </select>
+                    </td>
+                </tr>
+                
+            </table>
+
+        </Section>
+        <section class="resposta">
+            <div id="res">
+                teste
+            </div>
+
+        </section>
+    </main>
+    <script src="index.js"></script>
+    
+</body>
+</html>
