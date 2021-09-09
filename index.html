@@ -13,10 +13,9 @@
         <h1>Tríade do Tempo</h1>
             <nav>
                 <ul>
-                    <li><a href="">Dados</a></li>
-                    <li><a href="">Teste</a></li>
-                    <li><a href="">Cálculo</a></li>
-                    <li><a href="">Resposta</a></li>
+                    <li><a href="#dados">Dados</a></li>
+                    <li><a href="#teste">Teste</a></li>
+                    <li><a href="#res">Resposta</a></li>
                 </ul>
             </nav>
 
@@ -32,12 +31,16 @@
                 <input type="submit" value="Salvar" id="cadastro">
             </form>
         </Section>
-        <Section>
+        
+        <Section id="teste">
             <h2>Inicie seu teste</h2>
             <p>Agora vamos avaliar algumas respostas aos itens abaixo.</p>
             <h3>Marque a pontuação mais adequada de como você age no dia a dia</h3>
+        </Section>
+      
+        <section>    
             <table>
-                <tr id="Cabeçalho">
+                <tr class="cabec">
                     <th>N°</th>
                     <th>Pergunta</th>
                     <th>Resposta</th>
@@ -46,7 +49,7 @@
                     <td>1</td>
                     <td>Estive atrasado com minhas tarefas ou reuniões nas últimas semanas?</td>
                     <td>
-                        <select name="opções" id="opcoes" >
+                        <select id="ql1" name="opções" class="opcoes" >
                             <option value="1">Nunca</option>
                             <option value="2">Raramente</option>
                             <option value="3">Às vezes</option>
@@ -59,7 +62,7 @@
                     <td>2</td>
                     <td>É comum reduzir meu horário de almoço ou até mesmo comer enquanto trabalho para concluir um projeto ou tarefa?</td>
                     <td>
-                        <select name="opções" id="opcoes" >
+                        <select id="ql2" name="opções" class="opcoes" >
                             <option value="1">Nunca</option>
                             <option value="2">Raramente</option>
                             <option value="3">Às vezes</option>
@@ -68,15 +71,224 @@
                         </select>
                     </td>
                 </tr>
-                
+                <tr class="itens">
+                    <td>3</td>
+                    <td>Faço um planejamento por escrito de tudo que preciso fazer durante minha semana?</td>
+                    <td>
+                        <select id="ql3" name="opções" class="opcoes" >
+                            <option value="1">Nunca</option>
+                            <option value="2">Raramente</option>
+                            <option value="3">Às vezes</option>
+                            <option value="4">Quase Sempre</option>
+                            <option value="5">Sempre</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="itens"></tr>
+                    <td>4</td>
+                    <td>Costumo visitar com regularidade pessoas relevantes em minha vida como amigos, parentes, filhos?</td>
+                    <td>
+                        <select id="ql4" name="opções" class="opcoes" >
+                            <option value="1">Nunca</option>
+                            <option value="2">Raramente</option>
+                            <option value="3">Às vezes</option>
+                            <option value="4">Quase Sempre</option>
+                            <option value="5">Sempre</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="itens"></tr>
+                    <td>5</td>
+                    <td>Quando quero alguma coisa, defino esse objetivo por escrito, estabeleço prazos em minha agenda, monitoro os resultados obtidos e os comparo com os esperados?</td>
+                    <td>
+                        <select id="ql5" name="opções" class="opcoes" >
+                            <option value="1">Nunca</option>
+                            <option value="2">Raramente</option>
+                            <option value="3">Às vezes</option>
+                            <option value="4">Quase Sempre</option>
+                            <option value="5">Sempre</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="itens"></tr>
+                    <td>6</td>
+                    <td>Costumo deixar para fazer relatórios, imposto de renda, compras de Natal, estudar para provas e outras tarefas perto do prazo de entrega?</td>
+                    <td>
+                        <select id="ql6" name="opções" class="opcoes" >
+                            <option value="1">Nunca</option>
+                            <option value="2">Raramente</option>
+                            <option value="3">Às vezes</option>
+                            <option value="4">Quase Sempre</option>
+                            <option value="5">Sempre</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="itens"></tr>
+                    <td>7</td>
+                    <td>Tenho um tempo definido para dedicar a mim mesmo e nele, posso fazer o que quiser?</td>
+                    <td>
+                        <select id="ql7" name="opções" class="opcoes" >
+                            <option value="1">Nunca</option>
+                            <option value="2">Raramente</option>
+                            <option value="3">Às vezes</option>
+                            <option value="4">Quase Sempre</option>
+                            <option value="5">Sempre</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="itens"></tr>
+                    <td>8</td>
+                    <td>É comum aparecer problemas inesperados no meu dia a dia?</td>
+                    <td>
+                        <select id="ql8" name="opções" class="opcoes" >
+                            <option value="1">Nunca</option>
+                            <option value="2">Raramente</option>
+                            <option value="3">Às vezes</option>
+                            <option value="4">Quase Sempre</option>
+                            <option value="5">Sempre</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="itens"></tr>
+                    <td>9</td>
+                    <td>Nos dias de descanso, costumo passar boa parte do dia assistido televisão, jogando ou acessando a internet?</td>
+                    <td>
+                        <select id="ql9" name="opções" class="opcoes" >
+                            <option value="1">Nunca</option>
+                            <option value="2">Raramente</option>
+                            <option value="3">Às vezes</option>
+                            <option value="4">Quase Sempre</option>
+                            <option value="5">Sempre</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="itens"></tr>
+                    <td>10</td>
+                    <td>Posso afirmar que estou conseguindo realizar tudo o que gostaria em minha vida e que o tempo está passando na velocidade correta?</td>
+                    <td>
+                        <select id="ql10" name="opções" class="opcoes" >
+                            <option value="1">Nunca</option>
+                            <option value="2">Raramente</option>
+                            <option value="3">Às vezes</option>
+                            <option value="4">Quase Sempre</option>
+                            <option value="5">Sempre</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="itens"></tr>
+                    <td>11</td>
+                    <td>Consigo melhores resultados e me sinto mais produtivo quando estou sob pressão ou com o prazo curto?</td>
+                    <td>
+                        <select id="ql11" name="opções" class="opcoes" >
+                            <option value="1">Nunca</option>
+                            <option value="2">Raramente</option>
+                            <option value="3">Às vezes</option>
+                            <option value="4">Quase Sempre</option>
+                            <option value="5">Sempre</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="itens"></tr>
+                    <td>12</td>
+                    <td>Costumo participar de reuniões sem saber direito o conteúdo, o porquê devo participar ou a que resultado aquele encontro pode levar?</td>
+                    <td>
+                        <select id="ql12" name="opções" class="opcoes" >
+                            <option value="1">Nunca</option>
+                            <option value="2">Raramente</option>
+                            <option value="3">Às vezes</option>
+                            <option value="4">Quase Sempre</option>
+                            <option value="5">Sempre</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="itens"></tr>
+                    <td>13</td>
+                    <td>Leio muitos e-mails desnecessários, como piadas, correntes, propagandas, apresentações, produtos, etc?</td>
+                    <td>
+                        <select id="ql13" name="opções" class="opcoes" >
+                            <option value="1">Nunca</option>
+                            <option value="2">Raramente</option>
+                            <option value="3">Às vezes</option>
+                            <option value="4">Quase Sempre</option>
+                            <option value="5">Sempre</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="itens"></tr>
+                    <td>14</td>
+                    <td>Quando recebo um novo e-mail, costumo dar uma olhada para checar o conteúdo?</td>
+                    <td>
+                        <select id="ql14" name="opções" class="opcoes" >
+                            <option value="1">Nunca</option>
+                            <option value="2">Raramente</option>
+                            <option value="3">Às vezes</option>
+                            <option value="4">Quase Sempre</option>
+                            <option value="5">Sempre</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="itens"></tr>
+                    <td>15</td>
+                    <td>Não consigo realizar tudo que me propus fazer no dia e preciso fazer hora extra ou levar trabalho pra casa.</td>
+                    <td>
+                        <select id="ql15" name="opções" class="opcoes" >
+                            <option value="1">Nunca</option>
+                            <option value="2">Raramente</option>
+                            <option value="3">Às vezes</option>
+                            <option value="4">Quase Sempre</option>
+                            <option value="5">Sempre</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="itens"></tr>
+                    <td>16</td>
+                    <td>Assumo compromissos com outras pessoas ou aceito novas posições na empresa, mesmo que não goste muito da nova atividade, se for para aumentar meus rendimentos ou obter uma promoção?</td>
+                    <td>
+                        <select id="ql16" name="opções" class="opcoes" >
+                            <option value="1">Nunca</option>
+                            <option value="2">Raramente</option>
+                            <option value="3">Às vezes</option>
+                            <option value="4">Quase Sempre</option>
+                            <option value="5">Sempre</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="itens"></tr>
+                    <td>17</td>
+                    <td>Faço esporte com regularidade, me alimento de forma adequada e tenho o lazer que gostaria?</td>
+                    <td>
+                        <select id="ql17" name="opções" class="opcoes" >
+                            <option value="1">Nunca</option>
+                            <option value="2">Raramente</option>
+                            <option value="3">Às vezes</option>
+                            <option value="4">Quase Sempre</option>
+                            <option value="5">Sempre</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="itens"></tr>
+                    <td>18</td>
+                    <td>Costumo ir a festas, eventos, cursos, mesmo sem ter muita vontade apenas para agradar meu chefe, meus amigos ou família.</td>
+                    <td>
+                        <select id="ql18" name="opções" class="opcoes" >
+                            <option value="1">Nunca</option>
+                            <option value="2">Raramente</option>
+                            <option value="3">Às vezes</option>
+                            <option value="4">Quase Sempre</option>
+                            <option value="5">Sempre</option>
+                        </select>
+                    </td>
+                </tr>
             </table>
+            <button id="botao" onclick=verificar()> Verificar </button>
 
         </Section>
         <section class="resposta">
-            <div id="res">
-                teste
-            </div>
-
+            <div id="res"></div>
+            <div id="import"></div>
+            <div id="urgent"></div>
+            <div id="circun"></div>
+            <div id="texto"></div>
         </section>
     </main>
     <script src="index.js"></script>
