@@ -30,7 +30,7 @@ li>a:hover{
 }
 main{
     background-color: white;
-    width: 900px;
+    max-width: 900px;
     border-radius: 10px;
     color:var(--padrao);
     margin: auto;
@@ -55,7 +55,11 @@ th{
     color: var(--base);
 }
 #botao{
-    height: 30px;
+    display: block;
+    margin-top: 10px;
+    margin: 0 auto;
+    width: 150px;
+    height: 50px;
     border-radius: 10px;
     background-color: var(--padrao);
     color: white;
@@ -65,4 +69,22 @@ th{
     background-color: var(--base);
     color: var(--padrao);
 }
+.resposta{
+    display: flex;
+ margin-top: 10px;
+}
+.resposta.active > div{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: var(--base);
+    color:var(--padrao);
+    min-width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    font-size: 1.3em;
+    text-align: center;
+    text-indent: 0;
+}
+
 
