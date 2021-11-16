@@ -73,5 +73,6 @@ function verificar(){
     urg.innerHTML += `<br><strong>${urge.toFixed(1)}%</strong> <br> Urgente`
     tex.innerHTML += `<p>Após analisar o seu resultado talvez se    dê conta que precisa aprender um método de produtividade, aprender a planejar seu tempo da forma correta, a priorizar o que deve ser feito, usar a tecnologia a seu favor, aprender como ter mais foco e energia no no seu dia. Recomendamos a leitura do livro, A Tríade do Tempo, que com certeza dará diversas estratégias para começar a mudar esse padrão.</p>
     <p>Também, desenvolva uma atitude mental diária de evolução, mudando o padrão de correria para o padrão de andar. Andar na velocidade do que é importante, andar aproveitando aquilo que você conquistou, andar realizando as mudanças que precisa para ter uma vida com mais equilíbrio e resultados. Um bom começo é reservar um tempo para responder essas perguntas</p>`
+    
 
 }
